@@ -1,0 +1,61 @@
+{%  extends  'main/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet " href="{% static 'charity/styles/charity-acc.css'%}">
+
+    <main>
+        <h1 class="welcome-message">Welcome to your account, {{ user.get_full_name }}</h1>
+        <aside class="acc-info-responsive">
+            <h2 class="user-name">{{ user.get_full_name }}</h2>
+            <p class="email">E-mail Address<br> <span class="email-data">{{ user.email }}</span></p>
+            <p class="mobile">Mobile number<br> <span class="mobile-data">011 2345 6789</span></p>
+            <p class="points">Your Points<br> <span class="points-data">850</span></p>
+
+        </aside>
+        <div class="box1">
+            <div class="acc-card">
+                <img class="card-img" src="{% static 'charity/media/hands.jpg'%}" alt="">
+                <p class="card-p">help us to make impact changes in the socaity</p>
+            </div>
+            <div class="box-content">
+                <h2>Your donation will make us stronger</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                <a class="supply-btn-link" href="#supply"></a> <button class="supply-btn" value="ask for supplies">ask for supplies</button>
+            </div>
+        </div>
+
+        <aside class="acc-info">
+            <h2 class="user-name">{{ user.get_full_name }}</h2>
+            <p class="email">E-mail Address<br> <span class="email-data">{{ user.email }}</span></p>
+            <p class="mobile">Mobile number<br> <span class="mobile-data">011 2345 6789</span></p>
+            <p class="points">Your Points<br> <span class="points-data">850</span></p>
+
+        </aside>
+    </main>
+
+    <div class="box2">
+        <!-- <div class="elements-holder2"> -->
+        <div id="supply" class="box2-left-elements">
+            <p class="left-content-p">It’s time to make your change into the world</p>
+            <h1 class="logo-word">FoodManage</h1>
+        </div>
+        <div class="box2-middle-elements">
+            <label class="food-amount-label" for="food-amount" aria-required="true">Food Amount (Kg)</label>
+            <input class="food-amount" type="number" name="food amount" required> <br>
+
+            <label class="user-location" for="location" aria-required="true">Your Location</label>
+            <input class="location" type="text" name="location" required> <br>
+            <p class="form-text">We’ll notice you with pick up information</p>
+
+            <input class="submit-btn" type="submit">
+
+        </div>
+        <div class="box2-right-elements">
+            <div class="card-bg-img"></div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+
+    <script src="{% static 'charity/js/charity-acc.js'%}"></script>
+    {% endblock %}

@@ -1,0 +1,37 @@
+<footer>
+    <div>
+        <h1 class="footer-logo">FoodManage</h1>
+        <!-- <img class="footer-logo" src="imgs/CRVD-LOGOfinal.png" alt=""> <br> -->
+        <p class="footer-text">Stay informed, subscribe to our OFFERS!</p>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname"> <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+    <div class="social-media-holder">
+        <h1 class="social-media">Social Media</h1>
+        <div class="flex-div">
+            <a class="social-item link-items" href="https://www.facebook.com/CRVD-112601321231363">Facebook</a>
+            <a class="social-item link-items" href="https://www.instagram.com/crvd.info/">Instagram</a>
+            <a class="social-item link-items" href="https://www.facebook.com/CRVD-112601321231363">Twitter</a>
+        </div>
+    </div>
+    <div class="privacy-holder">
+        <h1 class="Policy">Pages</h1>
+        <div class="flex-div">
+            <a class="policy-item link-items" href="{% url 'main:reel' %}">Showreel</a>
+            <a class="policy-item link-items" href="{% url 'main:blogs' %}">Blog</a>
+            <a class="policy-item link-items" href="{% url 'main:contact' %}">Contact Us</a>
+            <!-- <a class="policy-item link-items" href="volunteer.html">Volunteer</a> -->
+            <!-- <a class="policy-item link-items" href="#">Partners</a> -->
+        </div>
+    </div>
+    <div class="location-holder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13818.016403879974!2d30.99910269703188!3d30.02239252807758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585a182c7fbc0b%3A0xa6dc4c3139bb0c14!2sFavilla%20Lounge!5e0!3m2!1sen!2seg!4v1569757358329!5m2!1sen!2seg"
+            width="100%" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <a href="tel:01067300073" title="Give me a call or text me"> <button class="call-btn"><span>Call NOW</span></button></a>
+
+    </div>
+</footer>

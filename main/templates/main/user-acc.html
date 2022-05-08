@@ -1,0 +1,40 @@
+{%  extends  'main/main.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet " href="{%static 'main/styles/user-acc.css'%}">
+
+
+    <main>
+        <h1 class="welcome-message">Welcome to your account, {{ user.get_full_name }}</h1>
+        <aside class="acc-info-responsive">
+            <h2 class="user-name">{{ user.get_full_name }}</h2>
+            <p class="email">E-mail Address<br> <span class="email-data">{{ user.email }}</span></p>
+            <p class="mobile">Mobile number<br> <span class="mobile-data">011 2345 6789</span></p>
+            <p class="points">Your Points<br> <span class="points-data">850</span></p>
+
+        </aside>
+        <div class="box1">
+            <div class="acc-card">
+                <img class="card-img" src="{% static 'main/media/hands.jpg' %}" alt="">
+                <p class="card-p">help us to make impact changes in the socaity</p>
+            </div>
+            <div class="box-content">
+                <h2>Your donation will make us stronger</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                <a class="supply-btn-link" href="#"></a> <button class="supply-btn" value="Supply">Volunteer</button>
+            </div>
+        </div>
+
+        <aside class="acc-info">
+            <h2 class="user-name">{{ user.get_full_name }}</h2>
+            <p class="email">E-mail Address<br> <span class="email-data">{{ user.email }}</span></p>
+            <p class="mobile">Mobile number<br> <span class="mobile-data">011 2345 6789</span></p>
+            <p class="points">Your Points<br> <span class="points-data">850</span></p>
+
+        </aside>
+    </main>
+
+
+
+    <script src="{% static 'main/js/user-acc.js'%}"></script>
+    {% endblock %}

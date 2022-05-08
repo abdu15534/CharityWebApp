@@ -1,0 +1,73 @@
+{%  extends  'main/main.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet " href="{% static '/main/styles/index.css' %}">
+    <section class="landing-section">
+        <div class="left-div">
+            <h1 class="landing-text">Cutting food waste is a delicious way of saving money, helping to feed the world and protect the planet.</h1>
+            <a href="{% url 'main:volunteer'%}"><button class="volunteer-btn">Volunteer</button></a>
+            <a href="#"><button class="join-btn">Join Us</button></a>
+        </div>
+        <img class="landing-img" src="{% static 'main/media/landing-img.jpg'%}" alt="">
+    </section>
+    <div class="company-numbers">
+        <div class="black-overlay"></div>
+        <p class="number1">Cooperators<br>+300</p>
+        <p class="number2">Charities<br>+500</p>
+        <p class="number3">Recycled food<br>+10000</p>
+    </div>
+    <section id="vision-and-mission" class="vision-and-mission">
+        <h1 class="vision-header">Vision & Mission</h1>
+        <div class="flex-holder">
+            <img class="vision-section-img" src="{% static 'main/media/vision-and-mission.jpg'%}" alt="myimg">
+            <p class="vision-section-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </section>
+    <section id="join-us" class="join-us-section">
+        <h1 class="join-us-header">Join Us</h1>
+        <div class="join-content-holder">
+            <div>
+                <p class="join-section-p">World hunger is on the rise, despite the work of people and organizations (such as the UN and World Bank) to tackle this problem. The global spend to make worldwide access to food possible reaches into billions of dollars. By looking at
+                    this problem, one could easily assume that there’s a shortage of food. But that’s not the case. The problem is food waste. These food waste quotes can inspire us to think about how much food we waste and could prevent from going to
+                    landfill.
+                    <br> The world produces enough food to keep everyone alive today well fed. According to the Food and Agriculture Organization of the UN, we have enough food to feed 10 billion people1. However, this food doesn’t get to everyone because
+                    of the wasteful behaviours of some. This waste starts from the level of the farmer to us, the consumers.
+                </p>
+                <a href="#"></a><button class="join-btn" value="Join Us">Join Us</button>
+            </div>
+            <img class="join-section-img" src="{% static 'main/media/packaging.jpg'%}" alt="myimg">
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="about-content container">
+            <div class="about-info">
+                <h2 data-aos="fade-in">Our Events</h2>
+                <p data-aos="zoom-in" class="about-info-p">
+                    PIXA STEEL has delivered engineering, project management and site studies services in EGYPT. PIXA STEEL has delivered engineering, project management and site studies services in EGYPT. PIXA STEEL has delivered engineering, project management and site
+                    studies services in EGYPT.<br><br> PIXA STEEL has delivered engineering, project management and site studies services in EGYPT. PIXA STEEL has delivered engineering, project management and site studies services
+                    in EGYPT. PIXA STEEL has delivered engineering, project management and site studies services in EGYPT. PIXA STEEL has delivered engineering, project management and site studies services in EGYPT.
+                </p>
+
+            </div>
+            <div class="about-images">
+
+                <img class="img1" data-aos="slide-right" src="{% static 'main/media/alexander-schimmeck-YpOhhVGPkyQ-unsplash.jpg' %}">
+                <img class="img2" data-aos="slide-left" src="{% static 'main/media/alexander-schimmeck-z_GQ5vX3flc-unsplash.jpg' %}">
+                <img class="img3" data-aos="slide-right" src="{% static 'main/media/bernard-hermant-dclPEtMVdK8-unsplash.jpg' %}">
+                <img class="img4" data-aos="slide-left" src="{% static 'main/media/warren-wong-J33qmCVr02A-unsplash.jpg' %}">
+                <img class="img1" data-aos="slide-right" src="{% static 'main/media/packaging.jpg' %}">
+                <img class="img3" data-aos="slide-left" src="{% static 'main/media/jack-church-LZ8NzZrByts-unsplash.jpg' %}">
+                <img class="img4" data-aos="slide-right" src="{% static 'main/media/larm-rmah-AEaTUnvneik-unsplash.jpg' %}">
+                <img class="img5" data-aos="slide-left" src="{% static 'main/media/katt-yukawa-K0E6E0a0R3A-unsplash.jpg' %}">
+            </div>
+        </div>
+    </section>
+
+
+
+    {%  include 'main/footer.html' %}
+{% endblock %}

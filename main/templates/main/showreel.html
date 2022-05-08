@@ -1,0 +1,13 @@
+{%  extends  'main/main.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet " href="{% static '/main/styles/showreel.css' %}">
+    <div class="video-media">
+        <video width="100%" id="myVideo" controls>
+            <source src="{% static '/main/media/Separate food waste and recycle for a healthy planet.mp4' %}">
+        </video>
+    </div>
+
+
+    <script src="{% static '/main/js/showreel.js' %}"></script>
+{% endblock %}

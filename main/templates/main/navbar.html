@@ -1,0 +1,22 @@
+<header>
+    <div class="logo-holder"> <a class="company-logo" href="{% url 'main:home' %}">FoodManage</a></div>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="{% url 'main:home' %}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#vision-and-mission" class="nav-link">V & M</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Join Us</a></li>
+            <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="{% url 'main:contact' %}" class="nav-link">Contact Us</a></li>
+            <li class="nav-item  "><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu-toggle">
+        <i class="bx bx-menu"></i>
+        <i class="bx bx-x"></i>
+    </div>
+</header>
